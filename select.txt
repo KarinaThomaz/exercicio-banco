@@ -1,0 +1,2 @@
+select f.id_filial, f.nm_filial, pt.id_produto, pt.ds_produto, e.qt_estoque_disponivel from tb_filial f inner join tb_estoque e on f.id_filial=e.id_filial inner join tb_produto pt on pt.id_produto=e.id_produto order by e.id_filial;
+
